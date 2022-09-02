@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="title" property="og:title" content="Quincid">
-    <meta name="description" property="og:description" content="3D Architectual Visualization, 3D Architectual Design, & 3D Architectual Rendering">
+    <meta name="description" property="og:description" content="Utilizing architectural visualization and 3D rendering, watch your vision come to life.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
     <meta name="msapplication-TileColor" content="#333333">
@@ -17,37 +17,69 @@
     <link rel="apple-touch-icon" sizes="180x180" href="https://quincid-web.s3.us-east-2.amazonaws.com/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://quincid-web.s3.us-east-2.amazonaws.com/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://quincid-web.s3.us-east-2.amazonaws.com/favicon-16x16.png">
-    <link rel="manifest" href="https://quincid-web.s3.us-east-2.amazonaws.com/site.webmanifest">
+    <!--<link rel="manifest" href="https://quincid-web.s3.us-east-2.amazonaws.com/site.webmanifest">-->
     <link rel="mask-icon" href="https://quincid-web.s3.us-east-2.amazonaws.com/safari-pinned-tab.svg" color="#333333">
     <link rel="shortcut icon" href="https://quincid-web.s3.us-east-2.amazonaws.com/favicon.ico" type="image/x-icon">
     <title>Quincid</title>
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
     <body>
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-          <nav>
-              <div id="logobox">
-                <a href="index.html" id="logo">
-                    <img src="https://quincid-web.s3.us-east-2.amazonaws.com/assets/logo-quincid_new-white.png" id="complogo">
-                </a>
-              </div>
-              <ul id="menu">
-                  <li><a href="about.html">About</a></li>
-                  <li><a href="services.html">Services</a></li>
-                  <li><a href="products.html">Products</a></li>
-                  <li><a href="locations.html">Locations</a></li>
-              </ul>
-          </nav>
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="container">
+            <a class="header__wrapper__logo" href="index.html" title="Quincid">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+                <defs>
+                  <filter id="a" filterUnits="userSpaceOnUse"><feOffset/>
+                    <feGaussianBlur result="blur" stdDeviation="7"/>
+                    <feFlood flood-color="#000" flood-opacity=".5"/>
+                    <feComposite in2="blur" operator="in"/>
+                    <feComposite in="SourceGraphic"/>
+                  </filter>
+                </defs>
+                <path style="stroke:#d1d3d4;stroke-width:64px;fill:none;stroke-linecap:round;stroke-linejoin:round" d="m305.75 295.789 107.225 79.393-73.313-54.23"/>
+                <path style="opacity:.25;stroke-width:50px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#fff" d="m305.866 295.789 106.944 79.185-73.121-54.088"/>
+                <path style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#fff;opacity:.5;stroke-width:40px" d="m305.866 295.789 106.944 79.185-73.121-54.088"/>
+                <path style="opacity:.75;stroke-width:30px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#fff" d="m305.866 295.789 106.944 79.185-73.121-54.088"/>
+                <path style="stroke-width:20px;fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#fff" d="m305.866 295.789 106.944 79.185-73.121-54.088"/>
+                <path style="stroke:#000;stroke-width:10px;fill:none;stroke-linecap:round;stroke-linejoin:round" d="m307.067 296.885 105.743 78.297-72.3-53.482"/>
+                <g style="filter:url(#a)">
+                  <path d="M255.773 331.15Zm-8.009.755Zm4.389-.309Zm15.112-2.958c-.351.104-.705.202-1.059.301.353-.1.708-.197 1.06-.3Zm-4.043 1.08Zm-3.302.729ZM244.024 332c-.037 0-.074-.003-.112-.003.038 0 .075.003.112.003Zm0-164c-.037 0-.074.003-.112.003.038 0 .075-.003.113-.003Z"/>
+                  <path d="M244.025 93c-86.709 0-157 70.291-157 157s70.291 157 157 157 157-70.291 157-157-70.291-157-157-157Zm23.24 235.638c-.351.104-.705.201-1.059.301-.988.277-1.982.538-2.984.779a81.116 81.116 0 0 1-6.337 1.27c-.37.059-.741.108-1.112.161-.912.132-1.829.248-2.75.35-.29.031-.579.068-.87.097a82.119 82.119 0 0 1-3.522.268c-.288.016-.577.028-.867.041a81.33 81.33 0 0 1-3.738.095h-.002c-.037 0-.074-.003-.112-.003-45.235-.061-81.887-36.747-81.887-81.997s36.652-81.936 81.887-81.997c.038 0 .075-.003.112-.003 45.288 0 82 36.713 82 82 0 37.212-24.795 68.615-58.759 78.638Zm-5.797 1.484Zm4.738-1.183Z"/>
+                  <path d="M256.885 330.989c-.37.058-.741.107-1.112.16.37-.053.742-.102 1.112-.16Zm-8.254.875c-.288.016-.578.028-.867.041.29-.013.579-.025.867-.041Zm4.391-.365c-.29.032-.578.068-.869.097.291-.028.58-.066.87-.097Z"/>
+                </g>
+              </svg>
+            </a>
+            <div class="header__wrapper__details">
+              <nav class="navbar navbar-expand-lg">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="https://www.quincid.com/portfolio/">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.quincid.com/services/">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.quincid.com/about/">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://www.quincid.com/contact/">Contact</a></li>
+                  </ul>
+                </div>
+              </nav>
+              <a href="" class="button button--dark">Get Price Estimation</a>
+            </div>
+          </div>
+        </div>
+          <div class="header__modal">
+            <div class="header__modal__menu">
+
+            </div>
+          </div>
         </header>
 
         <!--==================== MAIN ====================-->
-        <main class="main">
+        <main class="main" style="background-color: antiquewhite;">
             <!--==================== HOME ====================-->
             <section class="home section" id="home">
 
@@ -97,7 +129,7 @@
         <!--==================== FOOTER ====================-->
         <footer class="footer">
           <div class="container">
-            <span>&copy; Quincid LLC.</span>
+
           </div>
         </footer>
 
@@ -106,6 +138,11 @@
 
         <!--==================== SWIPER JS ====================-->
         <script src=""></script>
+
+        <!--==================== BOOTSTRAP JS ====================-->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
         <!--==================== MAIN JS ====================-->
         <script src=""></script>
